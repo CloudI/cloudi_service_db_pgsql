@@ -10,6 +10,7 @@
    {registered, []},
    {applications, [
         cloudi_core,
+        epgsql,
         epgsql_wg,
         pgsql,
         stdlib,
