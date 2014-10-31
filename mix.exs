@@ -3,7 +3,8 @@ defmodule CloudIServiceDbPgsql do
 
   def project do
     [app: :cloudi_service_db_pgsql,
-     version: "1.3.3",
+     version: "1.4.0-rc.4",
+     language: :erlang,
      description: description,
      package: package,
      deps: deps]
@@ -19,31 +20,7 @@ defmodule CloudIServiceDbPgsql do
      {:pgsql,
       [git: "https://github.com/semiocast/pgsql.git",
        branch: "master"]},
-     {:cloudi_core, "~> 1.3.3"},
-     {:cpg,
-      [git: "https://github.com/okeuday/cpg.git",
-       tag: "v1.3.3"]},
-     {:uuid,
-      [git: "https://github.com/okeuday/uuid.git",
-       tag: "v1.3.3"]},
-     {:reltool_util,
-      [git: "https://github.com/okeuday/reltool_util.git",
-       tag: "v1.3.3"]},
-     {:trie,
-      [git: "https://github.com/okeuday/trie.git",
-       tag: "v1.3.3"]},
-     {:quickrand,
-      [git: "https://github.com/okeuday/quickrand.git",
-       tag: "v1.3.3"]},
-     {:nodefinder,
-      [git: "https://github.com/okeuday/nodefinder.git",
-       tag: "v1.3.2"]},
-     {:dynamic_compile,
-      [git: "https://github.com/okeuday/dynamic_compile.git",
-       tag: "v1.3.3"]},
-     {:syslog,
-      [git: "https://github.com/okeuday/erlang-syslog.git",
-       tag: "1.0.3"]}]
+     {:cloudi_core, "~> 1.4.0-rc.4"}]
   end
 
   defp description do
