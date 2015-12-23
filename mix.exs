@@ -3,7 +3,7 @@ defmodule CloudIServiceDbPgsql do
 
   def project do
     [app: :cloudi_service_db_pgsql,
-     version: "1.5.0",
+     version: "1.5.1",
      language: :erlang,
      description: description,
      package: package,
@@ -16,11 +16,11 @@ defmodule CloudIServiceDbPgsql do
        branch: "devel"]},
      {:epgsql_wg,
       [git: "https://github.com/okeuday/epgsql_wg.git",
-       tag: "1.5.0"]},
+       branch: "master"]},
      {:pgsql,
       [git: "https://github.com/semiocast/pgsql.git",
        branch: "master"]},
-     {:cloudi_core, "~> 1.5.0"}]
+     {:cloudi_core, "~> 1.5.1"}]
   end
 
   defp description do
@@ -29,7 +29,7 @@ defmodule CloudIServiceDbPgsql do
 
   defp package do
     [files: ~w(src doc test rebar.config README.markdown),
-     contributors: ["Michael Truog"],
+     maintainers: ["Michael Truog"],
      licenses: ["BSD"],
      links: %{"Website" => "http://cloudi.org",
               "GitHub" => "https://github.com/CloudI/" <>
