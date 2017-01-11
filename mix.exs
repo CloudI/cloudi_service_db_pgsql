@@ -3,11 +3,11 @@ defmodule CloudIServiceDbPgsql do
 
   def project do
     [app: :cloudi_service_db_pgsql,
-     version: "1.5.4",
+     version: "1.6.0",
      language: :erlang,
-     description: description,
-     package: package,
-     deps: deps]
+     description: description(),
+     package: package(),
+     deps: deps()]
   end
 
   defp deps do
@@ -20,7 +20,7 @@ defmodule CloudIServiceDbPgsql do
      {:pgsql,
       [git: "https://github.com/semiocast/pgsql.git",
        branch: "master"]},
-     {:cloudi_core, "~> 1.5.4"}]
+     {:cloudi_core, "~> 1.6.0"}]
   end
 
   defp description do
