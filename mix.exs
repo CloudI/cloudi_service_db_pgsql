@@ -1,9 +1,12 @@
+#-*-Mode:elixir;coding:utf-8;tab-width:2;c-basic-offset:2;indent-tabs-mode:()-*-
+# ex: set ft=elixir fenc=utf-8 sts=2 ts=2 sw=2 et nomod:
+
 defmodule CloudIServiceDbPgsql do
   use Mix.Project
 
   def project do
     [app: :cloudi_service_db_pgsql,
-     version: "1.6.0",
+     version: "1.7.0",
      language: :erlang,
      description: description(),
      package: package(),
@@ -20,7 +23,7 @@ defmodule CloudIServiceDbPgsql do
      {:pgsql,
       [git: "https://github.com/semiocast/pgsql.git",
        branch: "master"]},
-     {:cloudi_core, "~> 1.6.0"}]
+     {:cloudi_core, "~> 1.7.0"}]
   end
 
   defp description do
