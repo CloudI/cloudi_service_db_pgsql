@@ -6,7 +6,7 @@ defmodule CloudIServiceDbPgsql do
 
   def project do
     [app: :cloudi_service_db_pgsql,
-     version: "1.7.0",
+     version: "1.7.1",
      language: :erlang,
      description: description(),
      package: package(),
@@ -17,13 +17,10 @@ defmodule CloudIServiceDbPgsql do
     [{:epgsql,
       [git: "https://github.com/okeuday/epgsql_new.git",
        branch: "devel"]},
-     {:epgsql_wg,
-      [git: "https://github.com/okeuday/epgsql_wg.git",
-       branch: "master"]},
      {:pgsql,
       [git: "https://github.com/semiocast/pgsql.git",
        branch: "master"]},
-     {:cloudi_core, "~> 1.7.0"}]
+     {:cloudi_core, "~> 1.7.1"}]
   end
 
   defp description do
