@@ -13,6 +13,13 @@ defmodule CloudIServiceDbPgsql do
      deps: deps()]
   end
 
+  def application do
+    [applications: [
+       :cloudi_core,
+       :epgsql,
+       :pgsql]]
+  end
+
   defp deps do
     [{:epgsql, "~> 4.0"},
      {:pgsql, "~> 26.0"},
