@@ -14,12 +14,8 @@ defmodule CloudIServiceDbPgsql do
   end
 
   defp deps do
-    [{:epgsql,
-      [git: "https://github.com/okeuday/epgsql_new.git",
-       branch: "devel"]},
-     {:pgsql,
-      [git: "https://github.com/semiocast/pgsql.git",
-       branch: "master"]},
+    [{:epgsql, "~> 4.0"},
+     {:pgsql, "~> 26.0"},
      {:cloudi_core, "~> 1.7.3"}]
   end
 
