@@ -6,7 +6,7 @@ defmodule CloudIServiceDbPgsql do
 
   def project do
     [app: :cloudi_service_db_pgsql,
-     version: "2.0.0",
+     version: "2.0.1",
      language: :erlang,
      erlc_options: [
        :debug_info,
@@ -38,7 +38,7 @@ defmodule CloudIServiceDbPgsql do
   defp deps do
     [{:epgsql, "~> 4.2.1"},
      {:pgsql, "~> 26.0.2"},
-     {:cloudi_core, "~> 2.0.0"}]
+     {:cloudi_core, "~> 2.0.1"}]
   end
 
   defp description do
@@ -46,7 +46,7 @@ defmodule CloudIServiceDbPgsql do
   end
 
   defp package do
-    [files: ~w(src doc test rebar.config README.markdown),
+    [files: ~w(src doc test rebar.config README.markdown LICENSE),
      maintainers: ["Michael Truog"],
      licenses: ["MIT"],
      links: %{"Website" => "https://cloudi.org",
