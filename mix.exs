@@ -6,7 +6,7 @@ defmodule CloudIServiceDbPgsql do
 
   def project do
     [app: :cloudi_service_db_pgsql,
-     version: "2.0.3",
+     version: "2.0.4",
      language: :erlang,
      erlc_options: [
        :debug_info,
@@ -36,9 +36,9 @@ defmodule CloudIServiceDbPgsql do
   end
 
   defp deps do
-    [{:epgsql, "~> 4.6.0", app: false},
-     {:pgsql, "~> 26.0.2", app: false},
-     {:cloudi_core, "~> 2.0.3", app: false}]
+    [{:epgsql, ">= 4.6.0"},
+     {:pgsql, ">= 26.0.2"},
+     {:cloudi_core, ">= 2.0.4"}]
   end
 
   defp description do
